@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll('[gsap-text-animation="small-trigger"]').forEach(function(triggerElement) {
             if (isElementInViewport(triggerElement, 0.30)) {
                 triggerElement.querySelectorAll('[gsap-text-animation="small-animate"]').forEach(function(animateElement) {
-                    if (!animateElement.classList.contains('slideup')) {
-                        animateElement.classList.add('slideup');
+                    if (!animateElement.classList.contains('reveal')) {
+                        animateElement.classList.add('reveal');
                     }
                 });
             }
